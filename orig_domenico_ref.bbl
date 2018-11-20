@@ -1,0 +1,130 @@
+\begin{thebibliography}{99}
+\bibitem{adler1981} \textbf{Adler, R. J. (1981) }
+
+\bibitem{adlerblanchet} \textbf{Adler, R. J., Blanchet, J. H., Liu, J. (2012)%
+} Efficient Monte Carlo for High Excursions of Gaussian Random Fields. \emph{%
+Ann. Appl. Probab.} 22, no. 3, 1167--1214.
+
+\bibitem{RFG} \textbf{Adler, R. J. and Taylor, J. E.}, \textbf{(2007)} \emph{%
+Random Fields and Geometry}, Springer.
+
+\bibitem{adlerstflour} \textbf{Adler, R. J. and Taylor, J. E. (2011)} \emph{%
+Topological Complexity of Smooth Random Functions.} Lecture Notes in
+Mathematics, 2019, Springer, Heidelberg.
+
+\bibitem{azaisbook} \textbf{Aza\"{\i}s, J.-M., Wschebor, M. (2009)} Level
+Sets and Extrema of Random Processes and Fields. John Wiley \& Sons, Inc.,
+Hoboken, NJ.
+
+\bibitem{bkmpAoS} \textbf{Baldi, P., Kerkyacharian, G., Marinucci, D. and
+Picard, D. (2009) }Asymptotics for Spherical Needlets, \emph{Annals of
+Statistics,} Vol. 37, No. 3, 1150-1171
+
+\bibitem{bkmpBer} \textbf{Baldi, P., Kerkyacharian, G., Marinucci, D. and
+Picard, D. (2009)} Subsampling Needlet Coefficients on the Sphere, \emph{%
+Bernoulli},\emph{\ }Vol. 15, 438-463,\emph{\ \ }arXiv: 0706.4169
+
+\bibitem{bennett2012} \textbf{Bennett, C.L. et al. (2012) }Nine-Year WMAP
+Observations: Final Maps and Results, arXiv:1212.5225
+
+\bibitem{chengxiao} \textbf{Cheng, D. and Xiao, Y. (2012)} The Mean Euler
+Characteristic and Excursion Probability of Gaussian Random Fields with
+Stationary Increments, arXiv:1211.6693
+
+\bibitem{chengxiao2} \textbf{Cheng, D. and Xiao, Y. (2014), }Excursion
+Probability of Gaussian Random Fields on Sphere, arXiv:1401.5498
+
+\bibitem{chengschwar} \textbf{Cheng, D., Schwartzman, A. (2013) }%
+Distribution of the Height of Local Maxima of Gaussian Random Fields,
+arXiv:1307.5863
+
+\bibitem{dode2004} \textbf{Dodelson, S. (2003)} \emph{Modern Cosmology},
+Academic Press
+
+\bibitem{Durrer} \textbf{Durrer, R. (2008) }\emph{The Cosmic Microwave
+Background, }Cambridge University Press.
+
+\bibitem{HEALPIX} \textbf{Gorski, K.M., Hivon, E., Banday, A.J., Wandelt,
+B.D., Hansen, F.K., Reinecke, M, Bartelman, M. (2005),} HEALPix -- a
+Framework for High Resolution Discretization, and Fast Analysis of Data
+Distributed on the Sphere, \emph{Astrophys. J.} 622:759-771
+
+\bibitem{hansen2009} \textbf{Hansen, F. K., Banday, A. J., G\'{o}rski, K.
+M., Eriksen, H. K., and Lilje, P. B. (2009) }Power Asymmetry in Cosmic
+Microwave Background Fluctuations from Full Sky to Sub-Degree Scales: Is the
+Universe Isotropic?, \emph{The Astrophysical Journal}, Volume 704, Issue 2,
+pp. 1448-1458
+
+\bibitem{spalan} \textbf{Lan, X. and Marinucci, D. (2008) }On the Dependence
+Structure of Wavelet Coefficients for Spherical Random Fields, \emph{%
+Stochastic Processes and their Applications}, 119, 3749-3766, arXiv:0805.4154
+
+\bibitem{marpecbook} \textbf{Marinucci, D. and Peccati, G. (2011) }\emph{%
+Random Fields on the Sphere. Representation, Limit Theorem and Cosmological
+Applications}, Cambridge University Press
+
+\bibitem{mpbb08} \textbf{Marinucci, D., Pietrobon, D., Balbi, A., Baldi, P.,
+Cabella, P., Kerkyacharian, G., Natoli, P. Picard, D., Vittorio, N., (2008) }%
+Spherical Needlets for CMB Data Analysis, \emph{Monthly Notices of the Royal
+Astronomical Society}, Volume 383, Issue 2, pp. 539-545
+
+\bibitem{MaWi} \textbf{Marinucci, D. and Wigman, I. (2011)} On the Excursion
+Sets of Spherical Gaussian Eigenfunctions, \emph{Journal of Mathematical
+Physics}, 52, 093301, arXiv 1009.4367
+
+\bibitem{MaWi2} \textbf{Marinucci, D. and Wigman, I. (2011)} The Defect
+Variance of Random Spherical Harmonics, \emph{Journal of Physics A:
+Mathematical and Theoretical}, 44, 355206, arXiv:1103.0232
+
+\bibitem{MaWi3} \textbf{Marinucci, D. and Wigman, I. (2012), }On Nonlinear
+Functionals of Random Spherical Eigenfunctions, \emph{Communications in
+Mathemarical Physics, }in press, arXiv: 1209.1841.
+
+\bibitem{matsubara} \textbf{Matsubara, T. (2010)} Analytic Minkowski
+Functionals of the Cosmic Microwave Background: Second-order Non-Gaussianity
+with Bispectrum and Trispectrum, \emph{Physical Review D,} 81:083505
+
+\bibitem{Wiaux} \textbf{McEwen, J. D., Vielva, P., Wiaux, Y., Barreiro, R.
+B., Cay\'{o}n, I., Hobson, M. P., Lasenby, A. N., Mart\'{\i}nez-Gonz\'{a}%
+lez, E. and Sanz, J. L. (2007)} Cosmological Applications of a Wavelet
+Analysis on the Sphere. \emph{J. Fourier Anal. Appl.} 13, no. 4, 495--510.
+
+\bibitem{npw1} \textbf{Narcowich, F.J., Petrushev, P. and Ward, J.D. (2006a)}
+Localized Tight Frames on Spheres, \emph{SIAM Journal of Mathematical
+Analysis }Vol. 38, pp. 574--594
+
+\bibitem{pbm06} \textbf{Pietrobon, D., Balbi, A., Marinucci, D. (2006) }%
+Integrated Sachs-Wolfe Effect from the Cross Correlation of WMAP3 Year and
+the NRAO VLA Sky Survey Data: New Results and Constraints on Dark Energy, 
+\emph{Physical Review D, }id. D:74, 043524
+
+\bibitem{pietrobon1} \textbf{Pietrobon, D., Amblard, A., Balbi, A., Cabella,
+P., Cooray, A., Marinucci, D. (2008)} Needlet Detection of Features in WMAP
+CMB Sky and the Impact on Anisotropies and Hemispherical Asymmetries, \emph{%
+Physical Review D}, D78 103504
+
+\bibitem{planckIS} \textbf{Planck Colaboration (2013) }Planck 2013 Results.
+XXIII. Isotropy and Statistics of the CMB, arXiv:1303.5083
+
+\bibitem{rudjord2} \textbf{Rudjord, O., Hansen, F.K., Lan, X., Liguori, M.
+Marinucci, D., Matarrese, S. (2010) }Directional Variations of the
+Non-Gaussianity Parameter $f_{NL}$, \emph{Astrophysical Journal}, Volume
+708, Issue 2, pp. 1321-1325, arXiv: 0906.3232
+
+\bibitem{Starck} \textbf{Starck, J.-L., Murtagh, F. and Fadili, J. (2010)} 
+\emph{Sparse Image and Signal Processing: Wavelets, Curvelets, Morphological
+Diversity}, Cambridge University Press.
+
+\bibitem{tayloradler2009} \textbf{Taylor, J.E. and Adler, R.J. (2009)}
+Gaussian Processes, Kinematic Formulae and Poincar\'{e}'s Limit. \emph{Ann.
+Probab.} 37, no. 4, 1459--1482.
+
+\bibitem{taylorvadlamani} \textbf{Taylor, J.E. and Vadlamani, S. (2013) }%
+Random Fields and the Geometry of Wiener Space, \emph{Ann. Probab.,} 41, no.
+4, 2724--2754
+
+\bibitem{VMK} \textbf{Varshalovich, D.A., A.N. Moskalev, and V.K.
+Khersonskii (1988), }\emph{Quantum Theory of Angular Momentum, }World
+Scientific\newpage
+
+\end{thebibliography}
