@@ -532,9 +532,18 @@ To test the validity of equations presented above, we used the \healpix \emph{sy
 
 For testing the Gaussianity of the Planck full-sky map, we used the 2018 Planck data and the corresponding FFP10 CMB only simulations. It is well known that the Planck full-sky map release should not be used for a serious cosmological analysis as part of the data is known to be highly unreliable and a confidence mask should be used. Our results derived from these maps is mostly to show a proof of concept to the use case of the MFs and critical points results derived using the second order Gaussian Kinematic Formula.    
 
-In all cases, the procedures to obtain a single multipole map is as follows: first we harmonic transform the simulated maps using \emph{anafast}; then to obtain $T_\ell(x)$ maps, we simply take the appropriate inverse transform 
-%across the relevant multipoles, in the case of needlets inserting also the squared needlet filter $b^{2}(.)$. 
-The multipole maps are then normalized by the corresponding sample root mean square, which is computed from the map itself. This is necessary as we have shown above using the sample rms minimizes MFs estimator variance.
+For the case of the Gaussian simulations, a single multipole map is
+obtained by taking the corresponding spherical harmonic coefficient
+and applying the \healpix \emph{alm2map}. For all the other cases
+where we start our analysis from existing maps, we first perform a
+\emph{map2alm} operation to obtain 
+the spherical harmonic coefficients of the map. We followed a similar
+procedure as we did for the Gaussian simulation case to obtain
+multipole, $T_\ell(x)$, maps.
+In all cases the maximum multipole is set to twice the map resolution
+parameter $\nside$.
+
+These maps are then normalized by the corresponding sample root mean square, which is computed from the map itself. This is necessary as we have shown above using the sample rms minimizes MFs estimator variance.
 
 We compute  the three Minkowski Functionals, which are equivalent to the LKCs up to constant factors, and critical point counts from these normalized multipole maps.  
 
