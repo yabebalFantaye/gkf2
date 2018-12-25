@@ -823,41 +823,34 @@ fit is extremely accurate even at very low multipole values; we also note the im
 the expected values at higher-multipoles.
 
 \begin{figure} %[H]
-\begin{center}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{rms_diff_proj2_ell150_genus.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{rms_diff_proj2_ell150_length.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{rms_diff_proj2_ell150_area.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{rms_diff_proj2_ell300_genus.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{rms_diff_proj2_ell300_length.pdf}}
-\includegraphics[width=0.32\textwidth,angle=0]{\figdir{rms_diff_proj2_ell300_area.pdf}}    
-\caption{Variance of the difference between theory and simulation:
-  First order (black and grey) vs
-  Second order (red) subtracted MFs. The rows from left to right are
-  Euler-poicare characteristics, perimeter length and area,
+  \begin{center}
+    \includegraphics[width=1\textwidth,angle=0]{\figdir{sim_vs_try_mfs_ell.pdf}}
+\caption{Expectation value difference between theory and simulation:
+  grey and dash-dash red curves are for simulations and  
+  analytical prediction, respectively. The rows from left to right are
+  Euler-poicare characteristics (Genus), perimeter length and area,
   respectively. The legend shows the multipoles at
-  which the LKCs are evaluated: the upper panel is for $\ell=200$ and
-  the lower panel is for $\ell=400$. Grey Shades are $68, 95$ and $99 \%$
+  which the LKCs are evaluated: the upper panel is for $\ell=500$ and
+  the lower panel is for $\ell=900$. Grey Shades are $68, 95$ and $99 \%$
   percentiles estimated from 100 simulations. \label{fig:m1ell}}
 \end{center}
 \end{figure}
 
 
 \begin{figure} %[H]
-\begin{center}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{var_proj2_vs_data_ell150_genus.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{var_proj2_vs_data_ell150_length.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{var_proj2_vs_data_ell150_area.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{var_proj2_vs_data_ell300_genus.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{var_proj2_vs_data_ell300_length.pdf}}
-\includegraphics[width=0.32\textwidth,angle=0]{\figdir{var_proj2_vs_data_ell300_area.pdf}}    
-\caption{Comparison of Variance of MFs from theory and simulation:
-  First order (black and grey) vs
-  Second order (red) subtracted MFs. The rows from left to right are
-  Euler-Poincare' characteristics, perimeter length and area,
-  respectively. The legend shows the multipoles at
-  which the LKCs are evaluated: the upper panel is for $\ell=200$ and
-  the lower panel is for $\ell=400$. Grey Shades are $68, 95$ and $99 \%$
-  percentiles estimated from 100 simulations. \label{fig:m1ell}}
+  \begin{center}
+    \includegraphics[width=1\textwidth,angle=0]{\figdir{var2_sim_vs_try_mfs_ell.pdf}}
+\caption{Analytical vs simulation variance comparison. The red
+  dash-dash curves are for analytical predictions; the black curves
+  are the variances from 1000 simulations centered at the analytical
+  predictions of the expectation values $proj[\mathcal{L_k}][0]$. The
+  blue curves are variances of the simulations after subtracting the
+  second order chaos term, subtracting 
+  $proj[\mathcal{L_k}][0]+proj[\mathcal{L_k}][2]$ from each simulation. In the difference
+  panels, the dash-dash red curves show the percentage difference between model and
+  simulation variances, while the solid blue curves are the percentage
+  ratio of the blue curve to the black in the main panel. The legend shows the multipoles at
+  which the LKCs are evaluated \label{fig:var2ell}}
 \end{center}
 \end{figure}
 
