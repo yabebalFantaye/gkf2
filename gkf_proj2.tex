@@ -7,6 +7,7 @@
 \usepackage{graphicx}  % needed for figures
 \usepackage{dcolumn}   % needed for some tables
 \usepackage{bm}        % for math
+\usepackage{natbib}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{amsfonts}
@@ -92,14 +93,14 @@ The geometry of the excursion sets for random fields on the sphere has been the 
 \begin{equation}
 A_{u}(f):=\left\{ x:f(x) \geq u\right\} \text{ ,}
 \end{equation}
-or, more explicitly, they represent the subregions where the value of $f$ exceeds the threshold $u$. It is well-known that these geometrical properties can be characterized in terms of the so-called Lipschitz-Killing curvatures (or equivalently, Minkowski functionals), which in the two dimensional case correspond to the excursion area, (half) the boundary length and the Euler-Poincar\'e characteristic (connected regions minus number of holes) of the excursion set. A comprehensive description of Lipschitz-Killing curvatures for excursion sets of random fields is given in the excellent monograph by Adler and Taylor .....; ; these functionals can be computed on real data by means of
+or, more explicitly, they represent the subregions where the value of $f$ exceeds the threshold $u$. It is well-known that these geometrical properties can be characterized in terms of the so-called Lipschitz-Killing curvatures (or equivalently, Minkowski functionals), which in the two dimensional case correspond to the excursion area, (half) the boundary length and the Euler-Poincar\'e characteristic (connected regions minus number of holes) of the excursion set. A comprehensive description of Lipschitz-Killing curvatures for excursion sets of random fields is given in the excellent monograph by Adler and Taylor \cite{Adler e Taylor}; ; these functionals can be computed on real data by means of
 accurate and numerically efficient algorithms \cite{KLENK2006127, Guderlei2007, Gay2012_NGPeaks}. These functionals have been widely applied in the analysis of experimental data, especially in a Cosmological framewrok, see i.e.,  \cite{natoli2010mfBoomrang, matsubara2010_mfFnl,
   ducout2013_mfFnl, gratten2012_mfLSSreview, munshi2013_mfSkewCl,planck2013_IS, planck2014-a18} and the references therein.
 
 
 A lot of mathematical efforts have been spent since the '80s on the characterization of expected values of these functionals under Gaussianity, culminating in the discovery of the beautiful Gaussian Kinematic Formula \cite{TaylorAdler2009}; comparing these expected values with realization allows the implementation of a number of tests for Gaussianity and Isotropy (see again \cite{planck2013-p09, planck2014-a18}).
 
-While the behaviour of expected values is now fully understood, it is clear that the implementation of more sophisticated, hence more sensitive, testing procedures requires further knowledge, in particular the variance of these functionals and therefore the possibility to establish Central Limit Theorems with correct normalization factors. Establishing a Central Limit result requires of course the exploitation of a suitable notion of asymptotic behaviour; in the framework of spherical fields, the only relevant notion seems to be the one of High-Frequency asymptotics. In particular it is well-known that isotropic random fields on the sphere can be decomposed by means of the Spectral representation theorem into the sum of orthogonal components, each of them corresponding to a different multipole $\ell$. The variance of Minkowski functionals/Lipschitz-Kiling curvatures in the high-frequency/high energy limit has been studied by several authors in recent years, starting from Wigman2009 for the nodal length, and then including, among others, Nazarov and Sodin...for the number of connected components, MWigman2011 for the excursion area, MWigman 2014 for the Defect, CammarotaMWigman for the Euler-Poincarè characteristic, MRossiWigman for the distribution of the nodal length, CammarotaMWigman... for the critical values and CammarotaWigman for the total number of critical points, CammarotaMarinucci2016,2018, see also Dalmao, Nourdin,Peccati, MPRW, Maffucci,.....for related works covering also the 2-dimensional torus....\cite{cm1603}.
+While the behaviour of expected values is now fully understood, it is clear that the implementation of more sophisticated, hence more sensitive, testing procedures requires further knowledge, in particular the variance of these functionals and therefore the possibility to establish Central Limit Theorems with correct normalization factors. Establishing a Central Limit result requires of course the exploitation of a suitable notion of asymptotic behaviour; in the framework of spherical fields, the only relevant notion seems to be the one of High-Frequency asymptotics. In particular it is well-known that isotropic random fields on the sphere can be decomposed by means of the Spectral representation theorem into the sum of orthogonal components, each of them corresponding to a different multipole $\ell$. The variance of Minkowski functionals/Lipschitz-Kiling curvatures in the high-frequency/high energy limit has been studied by several authors in recent years, starting from \cite{W} for the nodal length, and then including, among others, Nazarov and Sodin...for the number of connected components, \cite{M e W 2011} for the excursion area, \cite{M e W 2011bis} for the Defect, CammarotaMWigman for the Euler-Poincarè characteristic, MRossiWigman for the distribution of the nodal length, CammarotaMWigman... for the critical values and CammarotaWigman for the total number of critical points, CammarotaMarinucci2016,2018, see also Dalmao, Nourdin,Peccati, MPRW, Maffucci,.....for related works covering also the 2-dimensional torus....\cite{cm1603}.
 
 
 Our aim in this paper is to present a unified overview of this literature, and especially to perform a detailed numerical investigation to verify the practical relevance of these results when investigating spherical Gaussian maps. We shall address several issues concerning not only the expected value and variances of these functionals, but also their cross-correlation across different level sets. The theoretical predictions which have so far been produced are validated for the first time from a numerical point of view, and moreover their domain of applicability is clarified. Indeed, in terms of the variances the theoretical expressions which are obtained should be viewed as leading terms in series expansions of the variances over different "chaos" components; as such, the approximation depends on the speed of convergence to zeroes of the terms which are dropped. This speed is known to be polynomial in some cases (namely, those corresponding to non-zero levels) and logarithmic in others (those corresponding to zero levels); this duality is mirrored in the numerics we present.
@@ -109,7 +110,7 @@ Our aim in this paper is to present a unified overview of this literature, and e
 Minkowski Functionals are not the only objects of interest in this paper. Indeed, some other recent contributions have derived neat analytic formulae for the expected number and the variance of critical points on the same spherical harmonics components as considered earlier for MFs \cite{cm1603}. In this paper, we are exploiting these results for the first time as a further tool to search for residual point sources.   
 
 
-The plan of the paper is as follows: in Section 2, we review the results on the expected values and variances for the Lipschitz-Kiling Curvatures; in Section 3 we discuss the behaviour of critical points, again revieweing the analytic results that are currently available, while Section 4 is devoted to the analysis of the correlation among these different functionals. Section 5 describes our implementation algorithms and presents the numerical results; we then draw some some conclusions and present directions for future work.
+The plan of the paper is as follows: in Section 2, we review the results on the expected values and variances for the Lipschitz-Kiling Curvatures; in Section 3 we discuss the behaviour of critical points, again revieweing the analytic results that are currently available, while Section 4 is devoted to the analysis of the correlation among these different functionals. Section 5 describes our implementation algorithms and presents the numerical results; we then draw some conclusions and present directions for future work.
 
 \section{Characterization of Excursion Sets for Random Spherical Harmonics}
 
@@ -119,7 +120,7 @@ function $f$ are defined as
 A_{u}(f):=\left\{ x\in \mathbb{S}^{2}:f(x)\geq u\right\} \text{ .}
 \end{equation}
 Of course, in the limit where we take $u=-\infty ,$ we have that $%
-A_{u}(f)=S^{2}$. In this paper, we shall be concerned with random eigenfunctions which satisfy the Helmhotz equation @@@per favore anna paola, inserisci l'equazione, e specifica che prendiamo autofunzioni normalizzate per avere varianza 1!!!! grazie
+A_{u}(f)=\mathbb{S}^{2}$. In this paper, we shall be concerned with random eigenfunctions which satisfy the Helmhotz equation
 
 \begin{equation*}
 \Delta _{\mathbb{S}^{2}}f_{\ell }+\lambda _{\ell }f_{\ell }=0,\mbox{ }\mbox{
@@ -137,25 +138,17 @@ and $\lambda _{\ell }=\ell (\ell +1),\mbox{ }\ell =0,1,\dots $. For a given
 eigenvalue $\lambda _{\ell },$ the corresponding eigenspace is the $(2\ell
 +1)-$dimensional space of spherical harmonics of degree $\ell .$
 The random fields $\{f_{\ell }(x),x\in \mathbb{S}^{2}\}
-$ are Gaussian and isotropic. %From the addition theorem for spherical harmonics, 
-Also, we have that 
-\begin{eqnarray*}
-	\mathbb{E}[f_{\ell }(x)] &=&0,\mbox{ and }\mathbb{E}[f_{\ell }(x)^{2}]=1%
-	\text{,} \\
-	\mathbb{E}[f_{\ell }(x)f_{\ell }(y)] &=&P_{\ell }(\cos d(x,y)),
-\end{eqnarray*}%
+$ are Gaussian and isotropic with zero mean %From the addition theorem for spherical harmonics,
+$ 
+	\mathbb{E}[f_{\ell }(x)] =0 $ and variance $ }\mathbb{E}[f_{\ell }(x)^{2}]=1.$ The covariance function is given by $$
+	\mathbb{E}[f_{\ell }(x)f_{\ell }(y)] =P_{\ell }(\cos d(x,y))$$
 where $P_{\ell }$ are the Legendre polynomials and $d(x,y)$ is the spherical
 geodesic distance between $x$ and $y,$ i.e. 
 \begin{equation*}
 d(x,y)=\arccos (\langle x,y\rangle ).
 \end{equation*}%
 
-
-
-
-@@@@
-
-In this paper we aim at the implementation of Minkowski functionals/Lipschitz-Killing curvatures (to be defined below) on the spherical harmonic/Fourier components of of observed data. Let us first recall the well-known spectral representation theorem for spherical random fields, which states that the following identity holds, in the $L^2$ sense:
+In this paper we aim at the implementation of Minkowski functionals/Lipschitz-Killing curvatures (to be defined below) on the spherical harmonic/Fourier components of observed data. Let us first recall the well-known spectral representation theorem for spherical random fields, which states that the following identity holds, in the $L^2$ sense:
 \begin{equation}
 f(x)=\sum_{\ell =1}^{L_{\max }}\sum_{m=-\ell }^{\ell }a_{\ell m}Y_{\ell
 m}(x)=\sum_{\ell =1}^{L_{\max }}f_{\ell }(x)\text{ ;}  \label{specrap}
@@ -445,7 +438,10 @@ $$\lim_{\ell \rightarrow \infty} \ell^2 \int_{0}^{1} P_\ell^4(t)\, dt - \int_{0}
 \end{tabular}
 \end{center}
 To find the constant in (\ref{nodal-length}), since it was computed in \cite{} that $\int_{0}^{1} P_\ell^4(t) \,dt \sim \dfrac{3}{2\pi^2} \dfrac{\log \ell}{\ell^2}$, we take the difference between the integral and this value to obtain numerically
-$$\lim_{\ell \rightarrow \infty} \big[\int_{0}^{L} J_0^4(\psi) \psi \, d\psi -\dfrac{3}{2\pi^2} \log \ell \big]=0.297$$
+\begin{equation}\label{1}
+    \lim_{\ell \rightarrow \infty} \big[\int_{0}^{L} J_0^4(\psi) \psi \, d\psi -\dfrac{3}{2\pi^2} \log \ell \big]=0.297
+\end{equation}
+
 Thus, the variance 
 
 $$Var(h_{\ell;4})= 4! (4\pi)^2 \dfrac{1}{\ell^2} \bigg\{ \frac{3}{2\pi^2} \log \ell +0.297 \bigg\}= 4!16\pi^2 \dfrac{1}{\ell^2} \dfrac{3}{2\pi^2} \bigg\{ \log \ell+0.297\dfrac{2\pi^2}{3} \bigg\}$$
@@ -1031,11 +1027,14 @@ Norwegian national super-computing facilities, NOTUR. Maps and results
 have been derived using the \healpix (http://healpix.jpl.nasa.gov)
 software package developed by \cite{healpix}.
 
-\include{ap_bibliog.bbl.tex}
+
+\input{apbibliog.bbl.tex}
+
+
+
 %\bibliography{mf_literature_wabstract,Planck_bib}
 
 %\bibliography{gkf_proj2}
-
 
 
 \end{document}
