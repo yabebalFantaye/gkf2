@@ -856,9 +856,9 @@ the expected values at higher-multipoles.
 
 \begin{figure} %[H]
 \begin{center}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{critical_pdf_mpow1_meann128.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{extrema_pdf_mpow1_meann128.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{saddle_pdf_mpow1_meann128.pdf}}  
+  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{criticals_nops_Critical.pdf}}
+  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{criticals_nops_Extrema.pdf}}
+  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{criticals_nops_Saddle.pdf}}  
 \caption{Comparison of expectation PDF of critical, extrema, and saddle points from theory and simulation:
   The legend shows the multipoles at
   which the simulations curves are evaluated: Grey Shades are $68, 95$ and $99 \%$
@@ -869,9 +869,7 @@ the expected values at higher-multipoles.
 
 \begin{figure} %[H]
 \begin{center}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{variance_critical_pdf_num_vs_theory.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{variance_extrema_pdf_num_vs_theory.pdf}}
-  \includegraphics[width=0.32\textwidth,angle=0]{\figdir{variance_saddle_pdf_num_vs_theory.pdf}}  
+  \includegraphics[width=1\textwidth,angle=0]{\figdir{var_nops_criticals_extrema_Saddle.pdf}}  
 \caption{Comparison of Variance of critical, extrema, and saddle points from theory and simulation:
   The legend shows the multipoles at
   which the simulation curves are evaluated: Grey Shades are $68, 95$ and $99 \%$
@@ -882,6 +880,19 @@ the expected values at higher-multipoles.
 In Figures ...., we present our evidence on cross-correlations. As expected, correlations are very close to one (in absolute value) for any pair of random statistics evaluated at non-zero thresholds, including area, boundary length, Euler-Poincar\'e characteristic and the number of critical points; considering extrema (maxima and minima) and saddles separately would yield the same outcome. The simulations also confirm uncorrelation when expected, for instance between the boundary length (which is dominated by the fourth-order chaos, see.....) and the excursion area, which is dominated by odd order chaoses (see....). There is, as expected, correlation between the total number of critical points and the "nodal length", i.e., the boundary at zero level; this correlation at high-frequency converges to unity, but this convergence occurs only at logarithmic rate, so it does not show up fully for the multipoles that we are considering.
 
 All these results have potential for applications in the statistical analysis of random fields, for instance when testing for nonGaussianity and isotropy or to serach point-like sources/impurities. We do not address these issues in the present work, but we leave them as avenues for further reserach.
+
+
+\begin{figure} %[H]
+\begin{center}
+  \includegraphics[width=1\textwidth,angle=0]{\figdir{ap3_b100nj10_u5_3sig_ps0_mfu_critu_corrcoef.png}}  
+\caption{Correlation between and among the three Minkowski
+  Functionals and Critical points at different threshold values (as
+  shown in the axis) and different multipole values (left and right
+  panels). The strong positive and negative correlation at $u \ne 0$
+  is such that knowing a single value
+  determines the rest of the structure. \label{fig:var_crit}}
+\end{center}
+\end{figure}
 
 
 % \section{Summary and Conclusion}
